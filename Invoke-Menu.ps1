@@ -3,7 +3,7 @@ function Invoke-Menu {
     param (
         [Parameter(Mandatory=$true)]
         [array]$MenuOptions,
-        [string]$MenuTitle
+        [string]$MenuTitle = "Invoke-Menu: A Menu For Me"
 
     )
     $OldTitle = $host.ui.RawUI.WindowTitle
