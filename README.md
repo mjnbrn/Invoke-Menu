@@ -2,7 +2,7 @@
 ## Intro
 Just a simple powershell menu thing
 ## Usage
-###
+### Old Timey Text Instructions
 
 1. Clone Me
 1. Dot Source Me
@@ -17,5 +17,5 @@ $JustAnArray = "cheesy biscuits",[pscustomobject]@{cheese="gouda";sauce="alfredo
 Invoke-Menu -MenuOptions $JustAnArray
 Invoke-Menu -MenuOptions $JustAnArray -MenuTitle "Just a fun menu!"
 ```
-### GIF
+### New Fangled YIF
 ![ignore cursor](docs/Invoke-Menu.gif)
