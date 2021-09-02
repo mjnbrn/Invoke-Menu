@@ -9,7 +9,7 @@ Just a simple powershell menu thing
 1. Build an array!
 1. INVOKE MEnu
 1. Optionally, provide a menu title!
-
+2. 
 ```Powershell
 git clone https://github.com/mjnbrn/Invoke-Menu.git
 . .\Invoke-Menu\Invoke-Menu.ps1
@@ -19,3 +19,7 @@ Invoke-Menu -MenuOptions $JustAnArray -MenuTitle "Just a fun menu!"
 ```
 ### New Fangled YIF
 ![ignore cursor](docs/Invoke-Menu.gif)
+
+## Changes
+2021-09-02
+- Returns your answer instead of using write-output
