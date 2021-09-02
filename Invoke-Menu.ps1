@@ -1,7 +1,7 @@
 function Invoke-Menu {
     [CmdletBinding()]
     param (
-        [Parameter()]
+        [Parameter(Mandatory=$true)]
         [array]$MenuOptions,
         [string]$MenuTitle
 
