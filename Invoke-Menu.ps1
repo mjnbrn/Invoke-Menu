@@ -18,9 +18,9 @@ function Invoke-Menu {
             $MenuString += "($_) $($MenuOptions[$_])`n"
         }
     }
-    Write-Host $MenuString
+    # Write-Host $MenuString
 
-    $Answer = $MenuOptions[(Read-Host "Please enter the number of your selection: ")]
+    $Answer = $MenuOptions[(Read-Host $MenuString "~~~`nPlease make a selection: ")]
     $host.ui.RawUI.WindowTitle = $OldTitle
     return $Answer
 }
