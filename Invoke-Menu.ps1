@@ -8,11 +8,12 @@ function Invoke-Menu {
     )
     $OldTitle = $host.ui.RawUI.WindowTitle
     $host.ui.RawUI.WindowTitle = "$MenuTitle"
+    $MenuString = ""
     0..($MenuOptions.Length - 1) | ForEach-Object {
         if ($MenuOptions[$_] -match "^@{(.*)}$"){
-            Write-Output "($_) $($Matches[1])"
+            $MenuString += "($_) $($Matches[1])"
         }else{
-        Write-Output "($_) $($MenuOptions[$_])"}
+            $MenuString += "($_) $($MenuOptions[$_])"}
     }
 
     $Answer = $MenuOptions[(Read-Host "Please enter the number of your selection: ")]
