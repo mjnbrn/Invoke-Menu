@@ -20,6 +20,8 @@ Invoke-Menu -MenuOptions $JustAnArray -MenuTitle "Just a fun menu!"
 ### New Fangled YIF
 ![ignore cursor](docs/Invoke-Menu.gif)
 
+## Problems?
+Open an issue and maybe I'll look at it or something, but I spend most my off time playing final fantasy so...
 ## Changes
 2021-09-02
 - Returns your answer instead of using write-output
